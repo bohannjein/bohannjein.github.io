@@ -1,0 +1,64 @@
+/* Styling für den Header */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 36px;
+  }
+  
+  /* Styling für die Navigation */
+  nav {
+    background-color: #f2f2f2;
+    overflow: hidden;
+  }
+  
+  nav a {
+    float: left;
+    display: block;
+    color: #333;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  nav a:hover {
+    background-color: #ddd;
+    color: #333;
+  }
+  
+  nav a.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  /* Styling für die Hauptinhalts-Sektion */
+  section {
+    padding: 20px;
+  }
+  
+  section h2 {
+    font-size: 24px;
+  }
+  
+  section p {
+    font-size: 18px;
+  }
+  
+  /* Styling für den Impressum-Bereich */
+  .impressum {
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  
+  .impressum h1 {
+    font-size: 24px;
+  }
+  
+  .impressum p {
+    font-size: 16px;
+  }
