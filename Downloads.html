@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Links</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        
+        .container {
+            text-align: center; /* Zentriert den Text und die Elemente im Container */
+            max-width: 800px;
+            margin-top: 20px; /* Fügt etwas Abstand über den Kacheln hinzu */
+        }
+        
+        .tile {
+            background-color: #5b8b32;
+            border: 1px solid #dddddd;
+            padding: 20px;
+            border-radius: 10px; /* Abgerundete Ecken */
+            text-align: center;
+            position: relative; /* Relative Positionierung für das Bild */
+            display: inline-block; /* Damit die Kacheln horizontal angezeigt werden */
+        }
+        
+        .tile a {
+            color: #ffffff; /* Farbe der Links auf #ffffff (weiß) ändern */
+            text-decoration: none;
+            display: block;
+            width: 100%; /* Die gesamte Kachel klickbar machen */
+            height: 100%; /* Die gesamte Kachel klickbar machen */
+        }
+        
+        .tile:hover {
+            background-color: #3e5c20; /* Hintergrundfarbe ändern, wenn Maus über Kachel hovern */
+        }
+
+        .back-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #5b8b32;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        /* Stil für das Bild in der Kachel */
+        .tile img {
+            max-width: 150px; /* Maximale Breite des Bildes auf 150 Pixel festlegen */
+            max-height: 150px; /* Maximale Höhe des Bildes auf 150 Pixel festlegen */
+            margin-bottom: 10px; /* Abstand unter dem Bild */
+        }
+
+        /* Stil für den Titel unter dem Bild */
+        .tile p {
+            margin: 0; /* Standardmäßige Absatzeinstellungen entfernen */
+            font-size: 14px; /* Schriftgröße festlegen */
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html" class="back-button">Zurück zur Homepage</a>
+    <div class="container">
+        <h1>Download Links</h1> <!-- Der Titel wird jetzt zentriert angezeigt -->
+        <div class="tile">
+            <a href="Modrinth App_0.6.3_x64_en-US.msi">
+                <img src="modrinth.png" alt="Modrinth"> 
+                <p>Modrinth</p> <!-- Titel hinzufügen -->
+            </a>
+        </div>
+        <div class="tile">
+            <a href="7_Weltunders Modpack 1.0.0.mrpack">
+                <img src="modpack.png" alt=""> 
+                <p>Modpack</p> <!-- Titel hinzufügen -->
+            </a>
+        </div>
+        <div class="tile">
+            <a href="https://www.youtube.com/watch?v=7pC1omjgILQ&t">
+                <img src="question-1015308_1280.webp"> 
+                <p>Wie wird Bacon hergestellt?</p> <!-- Titel hinzufügen -->
+            </a>
+        </div>
+        <!-- Weitere Kacheln hier einfügen -->
+    </div>
+</body>
+</html>
