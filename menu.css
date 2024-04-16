@@ -1,0 +1,50 @@
+/* Stile für die Seitenleiste */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 50px; /* Breite für die kompakte Seitenleiste */
+    height: 100%;
+    background-color: #333;
+    z-index: 1001; /* Über dem Rest des Inhalts */
+    transition: width 0.3s ease; /* Sanfte Animation beim Ein-/Ausblenden */
+    overflow: hidden; /* Verhindert, dass Bilder über den Rand hinausragen */
+}
+
+/* Stile für das Menü */
+.menu {
+    padding-top: 60px; /* Platz für den Titel des Menüs */
+    overflow: hidden;
+    display: flex; /* Verwende Flexbox */
+    flex-direction: column; /* Ordne die Menübuttons vertikal an */
+    align-items: center; /* Zentriere die Menübuttons horizontal */
+}
+
+/* Stile für die Menübilder */
+.menu a {
+    display: block;
+    padding: 5px; /* Anpassung der Polsterung für die Bilder */
+    width: 25px; /* Breite der Buttons */
+    height: 25px; /* Höhe der Buttons */
+    margin: 2px 0 3px 2px; /* Abstand zum Rand und zwischen den Buttons */
+    position: relative; /* Positionierung relativ zum Container */
+    z-index: 1000; /* Stellen Sie sicher, dass die Bilder unter der Seitenleiste liegen */
+    background-color: #333; /* Graue Hintergrundfarbe für die Bilder */
+    transition: background-color 0.3s ease; /* Übergangseffekt für Farbänderungen */
+    border-radius: 5px; /* Runde Ecken */
+}
+
+/* Stile für die Hintergrundfarbe der Bilder beim Überfahren */
+.menu a:hover {
+    background-color: #5b8b32; /* Hintergrundfarbe beim Überfahren mit dem Mauszeiger */
+}
+
+/* Stile für den Inhalt */
+.container {
+    margin-left: 50px; /* Verschiebt den Inhalt um die Breite der Seitenleiste */
+}
+
+/* Stile für das Hintergrundvideo */
+#background-video {
+    margin-left: 50px; /* Verschiebt das Video um die Breite der Seitenleiste */
+}

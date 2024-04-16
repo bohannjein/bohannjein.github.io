@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Links</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        
+        #background-video {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -1;
+            background-size: cover;
+        }
+        
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: transparent; /* Transparenter Hintergrund wegen des Videos */
+        }
+        
+        .container {
+            text-align: center;
+            max-width: 800px;
+            margin-top: 20px;
+            position: relative; /* Sicherstellen, dass der Container über dem Video liegt */
+            z-index: 2;
+        }
+        
+        .tile {
+            background-color: rgba(91, 139, 50, 0.9); /* Leichte Transparenz, um das Video durchscheinen zu lassen */
+            border: 1px solid #dddddd;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .tile a {
+            color: #ffffff;
+            text-decoration: none;
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .tile:hover {
+            background-color: #3e5c20;
+        }
+
+        .back-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #5b8b32;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .tile img {
+            max-width: 150px;
+            max-height: 150px;
+            margin-bottom: 10px;
+        }
+
+        .tile p {
+            margin: 0;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <video autoplay muted loop id="background-video">
+        <source src="video/background.mp4" type="video/mp4">
+        Ihr Browser unterstützt keine Video-Tags.
+    </video>
+    <a href="index.html" class="back-button">Zurück</a>
+    <div class="container">
+        <h1>Download Links</h1>
+        <div class="tile">
+            <a href="download/Modrinth App_0.6.3_x64_en-US.msi">
+                <img src="pictures/modrinth.png" alt="Modrinth">
+                <p>Modrinth</p>
+            </a>
+        </div>
+        <div class="tile">
+            <a href="download/7_Weltunders Modpack 1.0.0.mrpack">
+                <img src="pictures/modpack.png" alt="Modpack"> 
+                <p>Modpack</p>
+            </a>
+        </div>
+        <div class="tile">
+            <a href="https://drive.usercontent.google.com/download?id=1WcIzry5JSuICifzF29OGwpm0fx-5TixA&export=download">
+                <img src="pictures/direct.png" alt="Direct Download">
+                <p>Mods (Forge)</p>
+            </a>
+        </div>
+        <!-- Weitere Kacheln hier einfügen -->
+    </div>
+</body>
+</html>

@@ -1,0 +1,71 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+#background-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    background-size: cover;
+}
+
+.container {
+    text-align: center;
+    z-index: 2; /* Stellen Sie sicher, dass der Container über dem Video liegt */
+    position: relative;
+}
+
+.logo {
+    max-width: 350px;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+.title {
+    font-family: Azonix, sans-serif;
+    font-size: 36px;
+    color: white; /* Verbesserte Sichtbarkeit über dem Video */
+}
+
+.title-image {
+    max-width: 100%; /* oder eine feste Breite, je nach Bedarf */
+    height: auto;
+    display: block;
+    margin: 0 auto 20px; /* Zentrierung und Abstand nach unten */
+}
+
+.subtitle {
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    color: #fff; /* Verbesserte Sichtbarkeit über dem Video */
+}
+
+.download-button {
+    font-family: Arial, sans-serif;
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-size: 18px;
+    background-color: #5b8b32;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    width: auto;
+    margin-right: 16px;
+}
+
+.download-button:hover {
+    background-color: #3e5c20;
+}
+
+/* Optional, falls benötigt */
+.circle {
+    /* Ihre bestehenden Stile für .circle */
+}
